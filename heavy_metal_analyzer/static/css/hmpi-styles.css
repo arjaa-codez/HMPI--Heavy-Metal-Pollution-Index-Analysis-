@@ -1,0 +1,180 @@
+/* HMPI Section Styling */
+.hmpi-section {
+    background: var(--secondary-bg);
+    border-radius: 12px;
+    padding: 20px;
+    margin: 20px 0;
+    border: 1px solid var(--border-color);
+}
+
+.hmpi-section h4 {
+    margin: 0 0 16px 0;
+    color: var(--text-primary);
+    font-size: 18px;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.hmpi-main {
+    background: var(--tertiary-bg);
+    border-radius: 8px;
+    padding: 16px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.hmpi-value {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+}
+
+.hmpi-number {
+    font-size: 3rem;
+    font-weight: bold;
+    color: var(--text-primary);
+    line-height: 1;
+}
+
+.hmpi-category {
+    font-size: 1.2rem;
+    font-weight: 600;
+    padding: 6px 16px;
+    border-radius: 20px;
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.hmpi-interpretation {
+    margin-top: 12px;
+    padding: 12px;
+    background: rgba(59, 130, 246, 0.1);
+    border-radius: 6px;
+    border-left: 4px solid var(--accent-color);
+}
+
+.hmpi-interpretation p {
+    margin: 0;
+    color: var(--text-secondary);
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+/* Heavy Metals Grid */
+.heavy-metals-grid h5 {
+    margin: 0 0 16px 0;
+    color: var(--text-primary);
+    font-size: 16px;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.metals-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 12px;
+}
+
+.metal-item {
+    background: var(--tertiary-bg);
+    border-radius: 8px;
+    padding: 16px;
+    border: 1px solid var(--border-color);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.metal-item:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.metal-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 12px;
+    gap: 8px;
+}
+
+.metal-name {
+    font-weight: 600;
+    color: var(--text-primary);
+    font-size: 14px;
+    flex: 1;
+}
+
+.metal-status {
+    font-size: 12px;
+    font-weight: 600;
+    padding: 4px 8px;
+    border-radius: 12px;
+    background: rgba(255, 255, 255, 0.1);
+    white-space: nowrap;
+}
+
+.metal-details {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.concentration {
+    font-size: 16px;
+    color: var(--text-primary);
+}
+
+.standard-comparison {
+    font-size: 12px;
+    color: var(--text-muted);
+}
+
+.quality-rating {
+    font-size: 12px;
+    color: var(--text-secondary);
+    padding: 4px 8px;
+    background: rgba(59, 130, 246, 0.1);
+    border-radius: 4px;
+    text-align: center;
+}
+
+/* Enhanced prediction grid for better organization */
+.prediction-grid h4 {
+    margin: 0 0 16px 0;
+    color: var(--text-primary);
+    font-size: 18px;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding-bottom: 8px;
+    border-bottom: 2px solid var(--border-color);
+}
+
+/* Responsive adjustments for HMPI */
+@media (max-width: 768px) {
+    .hmpi-number {
+        font-size: 2.5rem;
+    }
+    
+    .hmpi-category {
+        font-size: 1rem;
+    }
+    
+    .metals-container {
+        grid-template-columns: 1fr;
+    }
+    
+    .metal-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 4px;
+    }
+    
+    .metal-status {
+        align-self: flex-end;
+    }
+}

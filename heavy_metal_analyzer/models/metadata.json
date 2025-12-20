@@ -1,0 +1,80 @@
+{
+  "feature_columns": [
+    "latitude",
+    "longitude",
+    "gwl",
+    "district_encoded",
+    "mandal_encoded",
+    "lat_lon_interaction",
+    "season_encoded",
+    "year",
+    "ph",
+    "ec_primary",
+    "carbonate",
+    "bicarbonate",
+    "sodium",
+    "potassium",
+    "calcium",
+    "magnesium"
+  ],
+  "target_columns": [
+    "tds",
+    "chloride",
+    "fluoride",
+    "sulfate",
+    "total_hardness",
+    "sar",
+    "wqi",
+    "pollution_risk"
+  ],
+  "telangana_bounds": {
+    "lat_min": 15.5,
+    "lat_max": 19.9,
+    "lon_min": 77.0,
+    "lon_max": 81.5
+  },
+  "standards": {
+    "ph_min": 6.5,
+    "ph_max": 8.5,
+    "tds_max": 500,
+    "fluoride_max": 1.0,
+    "nitrate_max": 45,
+    "chloride_max": 250,
+    "sulfate_max": 200,
+    "hardness_max": 300
+  },
+  "model_info": {
+    "tds": {
+      "features": 16,
+      "trained_on": "2025-09-12T23:59:31.999164"
+    },
+    "chloride": {
+      "features": 16,
+      "trained_on": "2025-09-12T23:59:31.999164"
+    },
+    "fluoride": {
+      "features": 16,
+      "trained_on": "2025-09-12T23:59:31.999164"
+    },
+    "sulfate": {
+      "features": 16,
+      "trained_on": "2025-09-12T23:59:31.999164"
+    },
+    "total_hardness": {
+      "features": 16,
+      "trained_on": "2025-09-12T23:59:31.999164"
+    },
+    "sar": {
+      "features": 16,
+      "trained_on": "2025-09-12T23:59:31.999164"
+    },
+    "wqi": {
+      "features": 16,
+      "trained_on": "2025-09-12T23:59:31.999164"
+    },
+    "pollution_risk": {
+      "features": 16,
+      "trained_on": "2025-09-12T23:59:31.999164"
+    }
+  }
+}
